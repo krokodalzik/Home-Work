@@ -22,7 +22,7 @@ public class calculator {
         System.out.println(razn);
         var umn = ("3) Умножение");
         System.out.println(umn);
-        var del = ("4) Целочисленное деление");
+        var del = ("4) Деление");
         System.out.println(del);
 
         var krok = scanner.nextInt();
@@ -42,8 +42,8 @@ public class calculator {
             case 4:
                 Double m = number1 / number2;
                 System.out.println(m);
-                if (number2 > -1 && number2 < 1)
-                    System.out.println("Ты ебалай?");
+                if (number2 == 0)
+                    System.out.println("На ноль делить нельзя");
                 break;
         }
     }
